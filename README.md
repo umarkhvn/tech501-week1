@@ -5,6 +5,7 @@
     - [Bold and Italics](#bold-and-italics)
     - [Images](#images)
     - [Links](#links)
+      - [Ctrl + Shift + V to Preview MarkDown.md file](#ctrl--shift--v-to-preview-markdownmd-file)
 
 # Week 1 Learning
 
@@ -46,3 +47,6 @@
 * Click [here](http://google.com) to access hyperlink.
 * Use square brackets for link text and curly brackets for the actual webpage.
 
+<br>
+
+#### Ctrl + Shift + V to Preview MarkDown.md file
