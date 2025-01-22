@@ -8,10 +8,14 @@
     - [Agile Manifesto](#agile-manifesto)
   - [The Cloud](#the-cloud)
     - [What is The Cloud?](#what-is-the-cloud)
+    - [Differences between On-Premise and The Cloud](#differences-between-on-premise-and-the-cloud)
     - [Main Cloud Providers](#main-cloud-providers)
-    - [Models](#models)
+    - [Cloud Deployment Models](#cloud-deployment-models)
+    - [Types of Cloud Services](#types-of-cloud-services)
+    - [Costs in the Cloud](#costs-in-the-cloud)
+    - [4 Pillars of DevOps](#4-pillars-of-devops)
     - [Why is the VNet Important?](#why-is-the-vnet-important)
-    - [SSH Code Along](#ssh-code-along)
+- [SSH Code Along](#ssh-code-along)
 
 
 ## Intro to Agile
@@ -47,17 +51,40 @@
 * The Cloud is essentially a non-physical server where resources are allocated
 * It is a service available over the internet
 * Centrally managed. Allows us to have remote access to our resources
+* Key indicators of a service in the cloud are:
+  * No physical servers or on-site infrastructure
+  * Scalability and flexibility in resource provision
+  * Use of web interfaces, APIs, or cloud consoles to manage resources
 * Resources can include:
   * Virtual Machines | VN (Compute)
   * Virtual Networks | VNet (Network)
   * Databases
   * Storage (AWS S3, Azure Blob)
 
+### Differences between On-Premise and The Cloud
+
+On-Premise
+* Owned and managed by the organization
+* High initial cost and ongoing maintanence
+* Limited by physical infrastructure
+* Full control over hardware and software
+* Requires internal teams for maintanence and upkeep
+
+Cloud
+* Owned and managed by a Cloud Provider
+* Pay as you go pricing model
+* Highly scalable
+* Shared responsibility model. Not in full control
+* Cloud provider handles most maintanence 
+
 ### Main Cloud Providers
 
 * Azure
+  * Strong hybrid capabilities, integration with Microsoft ecosystem
 * AWS
+  * Comprehensive offerings, early market entry, global reach
 * GCP
+  * Known for AI/ML and data analytics
 
 On Azure... 
 
@@ -88,16 +115,51 @@ DO NOT EVER EXPOSE YOUR CREDENTIALS ON ANY PLATFORM. This includes:
 * Uploading content to teams 
 * If you are ever asked to make a video 
 
-### Models
+### Cloud Deployment Models
 
-* On-Premises
-  * Full control/responsibility
-* Infrastructure as a Service (IaaS)
-  * Virtual Machines
-* Platform as a Service (PaaS)
-  * App service/Cloud
-* Software as a Service (SaaS)
-  * Office 365
+* Private Cloud
+  * Dedicated to a singe organization for greater control and security
+  * Higher costs associated
+* Public Cloud
+  * Owned and managed by cloud providers. 
+  * Cost efficient but less control
+  * Shared Infrastructure
+* Hybrid Cloud
+  * Combines private and public clouds. Balances flexibility and control
+* Multi Cloud
+  * Use of multiple cloud services from different providers to avoid vendor lock-in
+
+### Types of Cloud Services
+
+* IaaS (Infrastructure as a Service): Virtual servers, storage, and networking (e.g., AWS EC2, Google Compute Engine).
+* PaaS (Platform as a Service): Managed platforms for developers to build applications (e.g., AWS Elastic Beanstalk, Azure App Services).
+* SaaS (Software as a Service): Ready-to-use applications (e.g., Microsoft 365, Google Workspace)
+
+### Costs in the Cloud
+
+* Compute (VMs, containers).
+* Storage (block, file, or object storage).
+* Networking (data transfer, load balancing).
+* Additional services (AI/ML, databases).
+
+Is migrating to the cloud always cheaper?
+* Pros: Reduced upfront costs, scalability, maintenance handled by providers.
+* Cons: Long-term costs may be higher, particularly if not optimised for usage.
+
+OpEx vs CapEx
+
+* OpEx (Operational Expenditure): 
+  * Pay-as-you-go expenses. Cloud falls into this category as it involves ongoing payments.
+* CapEx (Capital Expenditure): 
+  * Large upfront investments, typically seen with on-premises infrastructure.
+* Cloud services shift costs from CapEx to OpEx, improving cash flow but potentially increasing total lifetime cost.
+
+### 4 Pillars of DevOps
+
+* Culture: Collaboration across teams.
+* Automation: CI/CD pipelines.
+* Measurement: Monitoring performance.
+* Sharing: Knowledge sharing.
 
 ### Why is the VNet Important?
 
@@ -113,7 +175,7 @@ DO NOT EVER EXPOSE YOUR CREDENTIALS ON ANY PLATFORM. This includes:
 * VM's live inside our Subnets
   
 
-### SSH Code Along
+# SSH Code Along
 
 1) Go into root ~ /c/Users/ukhan/
 2) Make a directory for SSH keygen: mkdir .ssh
@@ -123,5 +185,3 @@ DO NOT EVER EXPOSE YOUR CREDENTIALS ON ANY PLATFORM. This includes:
 6) Enter passphrase: optional
 7) A public and private key should have been generated, assigned with a randomart image.
 8) Use the ls command to confirm both keys are generated. One should be exactly the file name. The other should be the same with a .pub extension, indicating this is the public key.
-
-[def]: #ssh-code-along
