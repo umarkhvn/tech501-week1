@@ -1,15 +1,12 @@
+**Topics**
 
-- [Week 1 Learning](#week-1-learning)
-  - [Markdown fundamentals](#markdown-fundamentals)
-    - [Bullet points](#bullet-points)
-    - [Bold and Italics](#bold-and-italics)
-    - [Images](#images)
-    - [Links](#links)
-      - [Ctrl + Shift + V to Preview MarkDown.md file](#ctrl--shift--v-to-preview-markdownmd-file)
+* [Why DevOps](<Day 1/README.md>)
 
-# Week 1 Learning
+* [Intro to Agile](<Day 2/README.md>)
 
-## Markdown fundamentals
+<br>
+
+# Markdown fundamentals
 
 ### Bullet points
 
