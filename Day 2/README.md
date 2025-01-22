@@ -1,5 +1,19 @@
 # DevOps Day 2
 
+
+- [DevOps Day 2](#devops-day-2)
+  - [Intro to Agile](#intro-to-agile)
+    - [What is the Agile Methodology?](#what-is-the-agile-methodology)
+    - [Why is it relevant for DevOps Engineers?](#why-is-it-relevant-for-devops-engineers)
+    - [Agile Manifesto](#agile-manifesto)
+  - [The Cloud](#the-cloud)
+    - [What is The Cloud?](#what-is-the-cloud)
+    - [Main Cloud Providers](#main-cloud-providers)
+    - [Models](#models)
+    - [Why is the VNet Important?](#why-is-the-vnet-important)
+    - [SSH Code Along](#ssh-code-along)
+
+
 ## Intro to Agile
 
 ### What is the Agile Methodology?
@@ -97,3 +111,17 @@ DO NOT EVER EXPOSE YOUR CREDENTIALS ON ANY PLATFORM. This includes:
   * Private Subnet
     * To communicate with IP addresses internally
 * VM's live inside our Subnets
+  
+
+### SSH Code Along
+
+1) Go into root ~ /c/Users/ukhan/
+2) Make a directory for SSH keygen: mkdir .ssh
+3) Navigate into directory: cd .ssh
+4) Generate a key with the following command: ssh-keygen -t rsa -b 4096 -C "['your personal email' without the square brackets]"
+5) Create a file name for the key. As we use Azure, the key should reference this. The name in this instance is: tech501-umar-az-key
+6) Enter passphrase: optional
+7) A public and private key should have been generated, assigned with a randomart image.
+8) Use the ls command to confirm both keys are generated. One should be exactly the file name. The other should be the same with a .pub extension, indicating this is the public key.
+
+[def]: #ssh-code-along
