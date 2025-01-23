@@ -2,7 +2,7 @@
 
 * [Why DevOps](<Day 1/README.md>)
 
-* [Intro to Agile](<Day 2/README.md>)
+* [Intro to Agile and The Cloud](<Day 2/README.md>)
 
 <br>
 
