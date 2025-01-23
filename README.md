@@ -3,7 +3,7 @@
 * [Why DevOps](<Day 1/README.md>)
 
 * [Intro to Agile and The Cloud](<Day 2/README.md>)
-
+* [Creating VM's and GitHub](<Day 3/README.md>)
 <br>
 
 # Markdown fundamentals
@@ -16,7 +16,7 @@
   - Sub point 2
     - Sub sub point 1
 
-###Numbers
+### Numbers
 
 1. Number if in steps
 2. This is the 2nd step
