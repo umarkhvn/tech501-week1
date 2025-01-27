@@ -1,4 +1,4 @@
-# Linux Processes
+# Linux Processes and NodeJS App Deployment
 
 ### What is a Linux Process?
 * A "Linux process" refers to an instance of a program that is currently running on a Linux system
@@ -54,4 +54,75 @@
   * AZ Key
   * Subnet-VNET 
     * These are for future use
-* 
+
+### How to deploy NodeJS App
+
+**For later to deploy NodeJS App**
+
+#!/bin/bash
+
+#update software
+
+sudo apt-get update -y
+
+#upgrade
+
+sudo apt-get upgrade -y
+
+#install nginx
+
+sudo apt install nginx -y
+
+#check if running
+
+sudo systemctl status nginx 
+
+#install NodeJS pre-reqs
+
+sudo DEBIAN_FRONTEND=noninteractive bash -c "curl -fsSL https://deb.nodesource.com/setup_20.x | bash -" && \
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
+
+#check NodeJS version
+
+node -v
+
+#run app
+
+node app.js OR npm start
+
+#clone repo
+
+git clone OR scp OR rsync 
+
+### Copy NodeJS App to VM
+
+By using the SCP method: 
+
+* scp -i ~/.ssh/tech501-umar-az-key -r ~/nodejs20-sparta-test-app adminuser@51.142.11.152:/home/adminuser
+
+By using git clone:
+
+* Log into VM via SSH
+* Check if git is installed:
+  * git -v
+* If not installed:
+  * sudo apt install git -y
+* Navigate to correct directory
+  * Optional: Make one called repo with mkdir repo
+* Clone repo:
+  * git clone https://github.com/umarkhvn/tech501-week1.git
+* Verify if installed:
+  * ls
+* Navigate to directory:
+  * cd tech501-week2
+
+### Test App
+
+* Go into folder where package.json is located
+* 'npm install' to install dependencies
+* 'node app.js' to run app on port
+* Test app by going on public IP followed by port number
+  * In my case: http://51.142.11.152:3000/
+* Ctrl + C to exit 
+
+![alt text](image.png)
