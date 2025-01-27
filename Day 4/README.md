@@ -1,4 +1,8 @@
 # DevOps Day 4
+- [DevOps Day 4](#devops-day-4)
+    - [Linux](#linux)
+    - [Environment Variables](#environment-variables)
+      - [Basic Commands](#basic-commands)
 
 ### Linux
 

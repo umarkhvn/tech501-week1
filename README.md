@@ -4,6 +4,7 @@
 
 * [Intro to Agile and The Cloud](<Day 2/README.md>)
 * [Creating VM's and GitHub](<Day 3/README.md>)
+* [Linux Basics](<Day 4>)
 <br>
 
 # Markdown fundamentals
