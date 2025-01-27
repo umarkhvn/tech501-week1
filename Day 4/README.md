@@ -24,6 +24,21 @@
 
 ### Environment Variables
 
+* Environment variables are dynamic values that affect how processes and applications run in the Git Bash terminal. They store information like file paths, configuration settings, or system details.
+* Global variables: Available across all processes in the system.
+* Local variables: Available only in the current session or script.
+Case Sensitivity:
+* In Git Bash, environment variable names are case-sensitive (e.g., PATH ≠ path).
+
+#### Basic Commands
 
 
+* View All Variables:
+  * env
+* Print a Variable:
+  * echo $VARIABLE_NAME
+* Set/Export a Variable:
+  * export VARIABLE_NAME=value
+* Remove a Variable:
+  * unset VARIABLE_NAME
   
